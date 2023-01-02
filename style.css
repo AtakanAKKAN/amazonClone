@@ -1,0 +1,602 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --bg-color: rgb(19,25,33);
+    --text-color: #f2f2f2;
+    --search-color: #FEBD69;
+    --dark-color: #000;
+    --white-color: #fff;
+    --guide-bg-color: rgb(35,47,62);
+    --fourSection-Margin-top: ;
+    --fourSection-Minus-Margin-top: ;
+    --fourSection-bg-color: #EAEDED;
+
+    /*#### SwiperJs Root ####*/
+    --colorOne: #141414;
+    --colorTwo: #5c5c5c;
+    --colorWhite: #e5e5e5;
+
+    --fontOne: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+    --tileBorderRadius: 4px;
+
+}
+
+ /* Header Layout CSS Start*/
+header{
+    display: flex;
+    top: 0;
+    left: 0;
+    min-width: 540px;
+    width: 100%;
+    height: 80px;
+    background-color: var(--bg-color);
+    white-space: nowrap;
+}
+
+.rage{
+    display: flex;
+    height: 100%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    margin: 0 auto;
+}
+
+header .logo img{
+    width: 115px;
+}
+
+.outline{
+    border: 1px solid transparent;
+}
+
+.outline:hover{
+    border: 1px solid var(--text-color);
+}
+
+.location{
+    display: flex;
+    margin: 3px 2px;
+}
+
+.location .icon{
+    width: 15px;
+    height: 18px;
+    margin-top: 8px;
+}
+
+.location .icon i{
+    font-size: 28px;
+    font-weight: 500;
+    color: var(--text-color);
+}
+.location .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 18px;
+    color: var(--text-color);
+}
+
+.location .text .c1{
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.location .text .c2{
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.seach-bar{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+
+}
+
+.seach-bar .right button{
+    font-size: 23px;
+    margin-left: 8px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    background-color: var(--text-color);
+    color: var(--bg-color);
+}
+
+.seach-bar .middle input{
+    padding: 10px 90px;
+}
+
+.seach-bar .left{
+    background-color: var(--search-color);
+    width: 47px;
+    height: 47px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-right-radius: 0.375rem;
+    border-bottom-right-radius: 0.375rem;
+}
+
+.seach-bar .left i{
+    font-size: 30px;
+    color: var(--dark-color);
+}
+
+.language{
+    margin-left: 8px;
+}
+
+.language .language-option img{
+    width: 28px;
+    padding-top: 40px;
+    padding-left: 10px;
+}
+
+.language .language-option span{
+    color: var(--text-color);
+    position: relative;
+    font-size: 22px;
+    font-weight: 500;
+    top: 24px;
+}
+
+.language .language-option i{
+    color: var(--text-color);
+    position: relative;
+    font-size: 22px;
+    font-weight: 500;
+    top: 30px;
+    left: -8px;
+}
+
+.account-order .text{
+    display: flex;
+    flex-direction: column;
+    color: var(--text-color);
+    justify-content: center;
+
+}
+
+.account-order{
+    display: flex;
+}
+
+.account-order .text .c1{
+    font-weight: 400;
+    font-size: 10px;
+}
+
+.account-order .text .c2{
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.anchor i{
+    color: var(--text-color);
+    position: relative;
+    font-size: 22px;
+    font-weight: 500;
+    top: 40px;
+}
+
+.return .text{
+    display: flex;
+    flex-direction: column;
+    color: var(--text-color);
+    justify-content: center;
+    margin-left: 10px;
+}
+.return{
+    display: flex;
+}
+.return .text .c3{
+    font-size: 10px;
+    font-weight: 400;
+}
+.return .text .c4{
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.shopCar{
+    display: flex;
+}
+
+.shopCar .shopcaricon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shopcaricon i{
+    color: var(--text-color);
+    font-size: 44px;
+    font-weight: 500;
+    display: inline-block;
+}
+
+/* Header Layout CSS End*/
+
+/* Guide Layout CSS Start*/
+.gui{
+    width: 100%;
+    height: 50px;
+    background-color: var(--guide-bg-color);
+}
+
+.gui-nav{
+    height: 100%;
+    width: 100%;
+    justify-content: flex-start;
+    float: left;
+    display: flex;
+
+}
+
+.gui-nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 0px !important;
+    text-transform: capitalize;
+    margin-bottom: 0px !important;
+    margin-left: 8px;
+}
+
+.nav-links- .nav-link- a{
+    font-size: 14px;
+    color: var(--white-color);
+    margin: 0 8px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.nav-link-active- i{
+    font-size: 25px;
+    justify-content: center;
+    margin-right: 2px;
+}
+
+.nav-link-active-{
+    display: flex;
+    font-size: 18px;
+    font-weight: 600;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-control-next,
+.carousel-control-prev{
+    height: 60%;
+    width: 10% !important;
+    z-index: 1;
+}
+
+.img-carousel{
+ position: relative;
+ z-index: 3;
+}
+
+.four-section{
+    position: relative;
+    width: 100%;
+    background-image:linear-gradient(transparent, var(--fourSection-bg-color), var(--fourSection-bg-color));
+    bottom: var(--fourSection-Margin-top);
+    z-index: 4;
+    padding-bottom: 10px;
+}
+
+.contain{
+    margin: 0 2%;
+}
+
+.cards-{
+    width: 100%;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+    padding-top: 20px;
+}
+
+/*#### Cards Multiple CSS ####*/
+.card-size{
+    min-width: 320px;
+    height: 380px;
+    background-color: var(--white-color);
+    padding: 20px;
+}
+
+.card-size .card-header h2{
+    font-size: 21px;
+    line-height: 27.3px;
+    color: var(--dark-color);
+}
+
+.card-size .card-body{
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.card-size{
+    position: relative;
+}
+
+.card-size .card-footer{
+    position: absolute;
+    bottom: 20px;
+}
+
+.card-size .card-footer a{
+    text-decoration: none;
+}
+
+.card-size .card-footer a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    color: #C7511F;
+}
+
+
+
+/*#### Cards Single CSS ####*/
+
+.card-1 .card-body{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+}
+
+.card-1 .card-body .content{
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+
+}
+
+.first-section-images{
+    height: 85px;
+}
+
+
+.card-2 .card-body div{
+    text-align: center;
+}
+
+.card-2 .card-body img{
+    max-width: 325px;
+    width: 100%;
+}
+
+.card-3 .card-body{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+}
+
+.card-3 .card-body img{
+    max-width: 325px;
+    width: 100%;
+}
+
+.card-3 .card-body .content{
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card-4 .card-body img{
+    max-width: 325px;
+    width: 100%;
+}
+
+.card-5 .card-body img{
+    max-width: 325px;
+    width: 100%;
+}
+
+.card-6 .card-body img{
+    max-width: 325px;
+    width: 100%;
+}
+
+/*#### Fifth Section CSS ####*/
+
+.fifth-section{
+    width: 100%;
+    position: relative;
+    z-index: 10;
+    bottom: var(--fourSection-Margin-top);
+}
+
+.fifth-section .contain-5{
+    padding: 20px;
+    background-color: var(--fourSection-bg-color);
+}
+
+.fifth-section h2{
+    font-size: 21px;
+    line-height: 27.3px;
+    color: var(--dark-color);
+    padding-bottom: 8px;
+}
+
+.thumbTiles.swiper{
+    padding: 0 4%;
+}
+
+.thumbTile{
+    width: 20%;
+}
+
+.thumbTile__image{
+    width: 100%;
+    border-radius: var(--tileBorderRadius);
+}
+
+.thumbTiles:hover .swiper-button-prev,
+.thumbTiles:hover .swiper-button-next{
+    height: 50%;
+    width: 4%;
+    width: calc(4% - 5px);
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: 0;
+    margin: 0;
+    background-color: var(--fourSection-bg-color) ;
+
+}
+
+.thumbTiles .swiper-button-prev{
+    left: 0;
+    border-top-right-radius: var(--tileBorderRadius);
+    border-bottom-right-radius: var(--tileBorderRadius);
+}
+
+.thumbTiles .swiper-button-next{
+    right: 0;
+    border-top-left-radius: var(--tileBorderRadius);
+    border-bottom-left-radius: var(--tileBorderRadius);
+}
+
+.thumbTiles .swiper-button-prev::after,
+.thumbTiles .swiper-button-next::after{
+    color: #000;
+    font-size: 4vw;
+    font-weight: bold;
+    transition: transform 0.1s ease-out;
+}
+
+@media screen and (min-width: 640px){
+
+ .thumbTiles .swiper-button-prev::after,
+ .thumbTiles .swiper-button-next::after{
+    display: none;
+    font-size: 2.4vw;
+ }
+
+ .thumbTiles .swiper-button-prev:hover::after,
+ .thumbTiles .swiper-button-next:hover::after{
+    transform: scale(1.25) ;
+}
+
+.thumbTiles:hover .swiper-button-prev::after,
+.thumbTiles:hover .swiper-button-next::after{
+    display: block;
+}
+}
+
+.first-slider{
+    margin-bottom: 30px;
+}
+
+.first-slider,
+.second-slider{
+    background-color: var(--white-color);
+    padding: 20px;
+}
+
+/*#### Sixth Section CSS ####*/
+
+.sixth-section{
+    background-color: var(--fourSection-bg-color);
+    width: 100%;
+    position: relative;
+    bottom: var(--fourSection-Margin-top);
+}
+
+/*#### Seventh Section CSS ####*/
+
+.seventh-section{
+    background-color: var(--fourSection-bg-color);
+    width: 100%;
+    position: relative;
+    bottom: var(--fourSection-Margin-top);
+    margin-bottom: var(--fourSection-Minus-Margin-top);
+}
+
+.seventh-section .contain-6{
+    padding: 20px;
+    background-color: var(--fourSection-bg-color);
+}
+
+.seventh-section h2{
+    font-size: 21px;
+    line-height: 27.3px;
+    color: var(--dark-color);
+    padding-bottom: 8px;
+}
+
+.seventh-section .swiper-slide{
+    height: 200px !important;
+    text-align: center;
+}
+
+.seventh-section .game-image{
+    height: 100%;
+    border-radius: var(--tileBorderRadius);
+}
+
+/*#### Footer CSS ####*/
+
+.eighth-section{
+    background-color: #232F3E;
+    width: 100%;
+    position: relative;
+}
+
+.contain-footer{
+    padding: 50px 4%;
+}
+
+.contain-footer .content{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.footer-lists{
+    margin: 0 auto;
+}
+
+.footer-lists h2{
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+}
+
+.content .footer-lists ul{
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.footer-lists ul li{
+    padding: 4px 0;
+    text-transform: capitalize;
+}
+
+.footer-lists ul li a{
+    text-decoration: none;
+    color: #DDDDDD;
+    font-size: 14px;
+}
+
+
+
+
+
+
