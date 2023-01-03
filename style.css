@@ -29,16 +29,23 @@
 
 }
 
- /* Header Layout CSS Start*/
+body{
+    min-height: 100%;
+    min-width: 1440px;
+    background-color: var(--fourSection-bg-color);
+}
+
+ /* Header Layout CSS Start */
 header{
-    display: flex;
-    top: 0;
-    left: 0;
-    min-width: 540px;
-    width: 100%;
-    height: 80px;
     background-color: var(--bg-color);
     white-space: nowrap;
+    min-width: 1000px;
+    min-height: 100%;
+}
+
+main{
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .rage{
@@ -46,8 +53,15 @@ header{
     height: 100%;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: flex-start;
-    margin: 0 auto;
+    justify-content: space-between;
+
+}
+
+header .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 header .logo img{
@@ -64,17 +78,11 @@ header .logo img{
 
 .location{
     display: flex;
-    margin: 3px 2px;
-}
-
-.location .icon{
-    width: 15px;
-    height: 18px;
-    margin-top: 8px;
+    align-items: center;
 }
 
 .location .icon i{
-    font-size: 28px;
+    font-size: 1.75rem;
     font-weight: 500;
     color: var(--text-color);
 }
@@ -82,17 +90,17 @@ header .logo img{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 18px;
+    margin-left: 0.50rem;
     color: var(--text-color);
 }
 
 .location .text .c1{
-    font-size: 10px;
+    font-size: 0.625rem;
     font-weight: 400;
 }
 
 .location .text .c2{
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 700;
 }
 
@@ -104,8 +112,8 @@ header .logo img{
 }
 
 .seach-bar .right button{
-    font-size: 23px;
-    margin-left: 8px;
+    font-size: 1.4375rem;
+    margin-left: 0.5rem;
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
     background-color: var(--text-color);
@@ -113,13 +121,13 @@ header .logo img{
 }
 
 .seach-bar .middle input{
-    padding: 10px 90px;
+    padding: 0.625rem 5.625rem;
 }
 
 .seach-bar .left{
     background-color: var(--search-color);
-    width: 47px;
-    height: 47px;
+    width: 2.9375rem;
+    height: 2.9375rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -134,29 +142,30 @@ header .logo img{
 
 .language{
     margin-left: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .language .language-option img{
-    width: 28px;
-    padding-top: 40px;
-    padding-left: 10px;
+    width: 1.125rem;
 }
 
 .language .language-option span{
     color: var(--text-color);
-    position: relative;
-    font-size: 22px;
+    font-size: 1.125rem;
     font-weight: 500;
-    top: 24px;
+    position: relative;
+    
 }
 
 .language .language-option i{
     color: var(--text-color);
-    position: relative;
-    font-size: 22px;
+    font-size: 1.125rem;
     font-weight: 500;
-    top: 30px;
-    left: -8px;
+    position: relative;
+    top: 0.625rem;
+    right: 0.4375rem;
 }
 
 .account-order .text{
@@ -173,18 +182,18 @@ header .logo img{
 
 .account-order .text .c1{
     font-weight: 400;
-    font-size: 10px;
+    font-size: 0.625rem;
 }
 
 .account-order .text .c2{
     font-weight: 700;
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 
 .anchor i{
     color: var(--text-color);
     position: relative;
-    font-size: 22px;
+    font-size: 1.375rem;
     font-weight: 500;
     top: 40px;
 }
@@ -194,17 +203,16 @@ header .logo img{
     flex-direction: column;
     color: var(--text-color);
     justify-content: center;
-    margin-left: 10px;
 }
 .return{
     display: flex;
 }
 .return .text .c3{
-    font-size: 10px;
+    font-size: 0.625rem;
     font-weight: 400;
 }
 .return .text .c4{
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 700;
 }
 
@@ -220,7 +228,7 @@ header .logo img{
 
 .shopcaricon i{
     color: var(--text-color);
-    font-size: 44px;
+    font-size: 2.75rem;
     font-weight: 500;
     display: inline-block;
 }
@@ -230,7 +238,7 @@ header .logo img{
 /* Guide Layout CSS Start*/
 .gui{
     width: 100%;
-    height: 50px;
+    height: 3.125rem;
     background-color: var(--guide-bg-color);
 }
 
@@ -255,22 +263,22 @@ header .logo img{
 }
 
 .nav-links- .nav-link- a{
-    font-size: 14px;
+    font-size: 0.875rem;
     color: var(--white-color);
-    margin: 0 8px;
+    margin: 0 0.5rem;
     text-decoration: none;
     display: inline-block;
 }
 
 .nav-link-active- i{
-    font-size: 25px;
+    font-size: 1.5625rem;
     justify-content: center;
-    margin-right: 2px;
+    margin-right: 0.125rem;
 }
 
 .nav-link-active-{
     display: flex;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 600;
     justify-content: center;
     align-items: center;
