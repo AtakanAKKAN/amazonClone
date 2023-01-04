@@ -31,7 +31,7 @@
 
 body{
     min-height: 100%;
-    min-width: 1440px;
+    min-width: 1000px;
     background-color: var(--fourSection-bg-color);
 }
 
@@ -54,7 +54,6 @@ main{
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
-
 }
 
 header .logo{
@@ -108,7 +107,13 @@ header .logo img{
     display: flex;
     align-items: center;
     flex-direction: row;
+    min-width: 50px;
+    width: 100%;
+}
 
+.seach-bar .middle{
+    min-width: 50px;
+    width: 100%;
 }
 
 .seach-bar .right button{
@@ -121,7 +126,9 @@ header .logo img{
 }
 
 .seach-bar .middle input{
-    padding: 0.625rem 5.625rem;
+    padding: 0.625rem 0;
+    width: 100%;
+    min-width: 50px;
 }
 
 .seach-bar .left{
@@ -321,7 +328,7 @@ header .logo img{
 /*#### Cards Multiple CSS ####*/
 .card-size{
     min-width: 320px;
-    height: 380px;
+    height: 420px;
     background-color: var(--white-color);
     padding: 20px;
 }
@@ -344,6 +351,10 @@ header .logo img{
 .card-size .card-footer{
     position: absolute;
     bottom: 20px;
+}
+
+.lg-screen-cars{
+    display: none;
 }
 
 .card-size .card-footer a{
@@ -383,8 +394,13 @@ header .logo img{
 }
 
 .card-2 .card-body img{
-    max-width: 325px;
+    max-width: 400px;
     width: 100%;
+    object-fit: cover;
+}
+
+.card-2 .card-body{
+    max-width: 325px;
 }
 
 .card-3 .card-body{
@@ -408,7 +424,7 @@ header .logo img{
 }
 
 .card-4 .card-body img{
-    max-width: 325px;
+    max-width: 380px;
     width: 100%;
 }
 
@@ -601,6 +617,17 @@ header .logo img{
     text-decoration: none;
     color: #DDDDDD;
     font-size: 14px;
+}
+
+@media (min-width:1585px) {   
+    .cards-{
+        grid-template-columns: auto auto auto auto;
+    }
+
+    .lg-screen-cars{
+    display: block;
+    }
+ 
 }
 
 
