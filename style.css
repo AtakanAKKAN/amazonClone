@@ -44,7 +44,7 @@ header{
 }
 
 main{
-    max-width: 1440px;
+    max-width: 1640px;
     margin: 0 auto;
 }
 
@@ -64,7 +64,7 @@ header .logo{
 }
 
 header .logo img{
-    width: 115px;
+    max-width: 115px;
 }
 
 .outline{
@@ -109,6 +109,7 @@ header .logo img{
     flex-direction: row;
     min-width: 50px;
     width: 100%;
+    margin-right: 8px;
 }
 
 .seach-bar .middle{
@@ -148,7 +149,6 @@ header .logo img{
 }
 
 .language{
-    margin-left: 8px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -162,8 +162,7 @@ header .logo img{
     color: var(--text-color);
     font-size: 1.125rem;
     font-weight: 500;
-    position: relative;
-    
+    position: relative; 
 }
 
 .language .language-option i{
@@ -180,7 +179,6 @@ header .logo img{
     flex-direction: column;
     color: var(--text-color);
     justify-content: center;
-
 }
 
 .account-order{
@@ -202,7 +200,7 @@ header .logo img{
     position: relative;
     font-size: 1.375rem;
     font-weight: 500;
-    top: 40px;
+    top: 25px;
 }
 
 .return .text{
@@ -301,13 +299,13 @@ header .logo img{
 .img-carousel{
  position: relative;
  z-index: 3;
+ margin-bottom: -15%;
 }
 
 .four-section{
     position: relative;
     width: 100%;
     background-image:linear-gradient(transparent, var(--fourSection-bg-color), var(--fourSection-bg-color));
-    bottom: var(--fourSection-Margin-top);
     z-index: 4;
     padding-bottom: 10px;
 }
@@ -384,8 +382,10 @@ header .logo img{
 
 }
 
-.first-section-images{
-    height: 85px;
+.card-1 .card-body img{
+    max-width: 400px;
+    width: 100%;
+    object-fit: cover;
 }
 
 
@@ -443,8 +443,7 @@ header .logo img{
 .fifth-section{
     width: 100%;
     position: relative;
-    z-index: 10;
-    bottom: var(--fourSection-Margin-top);
+    z-index: 4;
 }
 
 .fifth-section .contain-5{
@@ -540,7 +539,7 @@ header .logo img{
     background-color: var(--fourSection-bg-color);
     width: 100%;
     position: relative;
-    bottom: var(--fourSection-Margin-top);
+    z-index: 4;
 }
 
 /*#### Seventh Section CSS ####*/
@@ -549,8 +548,7 @@ header .logo img{
     background-color: var(--fourSection-bg-color);
     width: 100%;
     position: relative;
-    bottom: var(--fourSection-Margin-top);
-    margin-bottom: var(--fourSection-Minus-Margin-top);
+    z-index: 4;
 }
 
 .seventh-section .contain-6{
@@ -581,6 +579,7 @@ header .logo img{
     background-color: #232F3E;
     width: 100%;
     position: relative;
+    z-index: 4;
 }
 
 .contain-footer{
@@ -626,9 +625,257 @@ header .logo img{
 
     .lg-screen-cars{
     display: block;
-    }
- 
+    } 
 }
+
+@media (max-width:1024px){
+
+    .card-size{
+        max-width: 320px;
+        min-width: 0;
+        height: 340px;
+        background-color: var(--white-color);
+        padding: 20px;
+    }
+
+    .cards-{
+        padding: 0 1%;
+    }
+
+    body{
+        max-width: 1024px;
+        min-width: 0 !important;
+    }
+    
+    header{
+        max-width: 1024px;
+        min-width: 0;
+    }
+
+    
+}
+
+@media (max-width:950px) {
+
+    body{
+        max-width: 950px;
+        min-width: 0;
+    }
+    
+    header{
+        max-width: 950px;
+        min-width: 0;
+    }
+
+    .gui-nav ul{
+        padding-left: 0px !important;
+        margin-bottom: 0px !important;
+        margin-left: 8px;
+    }
+
+    .gui-nav ul li{
+        align-items: center;
+        margin-top: 0;
+        padding-top: 0;
+    }
+    
+    .nav-links- .nav-link- a{
+        font-size: 12px;
+        margin: 0 0.5rem;
+    }
+    
+    .nav-link-active- i{
+        font-size: 20px;
+        justify-content: center;
+        margin-right: 0;
+    }
+    
+    .nav-link-active-{
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .location .icon i{
+        font-size: 22px;
+    }
+    .location .text{
+        margin-left: 4px;
+    }
+    
+    .location .text .c1{
+        font-size: 8px;
+    }
+    
+    .location .text .c2{
+        font-size: 12px;
+    }
+   
+    .seach-bar .right button{
+        font-size: 17px;
+        margin-left: 0.5rem;
+    }
+    
+    .seach-bar .middle input{
+        padding: 7px 0;
+        width: 100%;
+        min-width: 50px;
+    }
+    
+    .seach-bar .left{
+        width: 41px;
+        height: 41px;
+    }
+    
+    .seach-bar .left i{
+        font-size: 24px;
+        color: var(--dark-color);
+    }
+    
+    .seach-bar{
+        margin-right: 6px;
+    }
+    
+    .language .language-option img{
+        width: 16px;
+    }
+    
+    .language .language-option span{
+        font-size: 16px;
+    }
+    
+    .language .language-option i{
+        font-size: 16px;
+        font-weight: 500;
+    }
+         
+    .account-order .text .c1{
+        font-weight: 400;
+        font-size: 8px;
+    }
+    
+    .account-order .text .c2{
+        font-weight: 700;
+        font-size: 12px;
+    }
+    
+    .anchor i{
+        font-size: 18px;
+        font-weight: 500;
+        top: 25px;
+    }
+
+    .return .text .c3{
+        font-size: 8px;
+        font-weight: 400;
+    }
+    .return .text .c4{
+        font-size: 12px;
+        font-weight: 700;
+    }
+  
+    .shopcaricon i{
+        font-size: 38px;
+        font-weight: 500;
+    }
+    
+}
+
+@media (max-width:740px) {
+
+    .nav-links- .nav-link- a{
+        font-size: 9px;
+        margin: 0 0.25rem;
+    }
+
+    .location{
+        display: none;
+    }
+
+    .language{
+        display: none;
+    }
+
+    .cards-{
+        grid-template-columns: auto auto;
+        place-items: center;
+    }
+    
+}
+
+@media (max-width:581px) {
+    .nav-links- .nav-link- a{
+        font-size: 0.5rem;
+    }
+
+    .account-order{
+        display: none;
+    }
+
+    .return{
+        display: none;
+    }
+
+    .seach-bar{
+        min-width: 0px;
+        margin-right: 8px;
+        width: 250px;
+    }
+    
+    .seach-bar .middle{
+        min-width: 0px;
+        width: 150px;
+    }
+    
+    .seach-bar .right button{
+        font-size: 14px;
+        margin-left: 8px;
+      
+    }
+    
+    .seach-bar .middle input{
+        padding: 4px 0;
+        width: 100%;
+        min-width: 0px;
+        width: 150px;
+    }
+    
+    .seach-bar .left{       
+        width: 35px;
+        height: 35px;
+    }
+    
+    .seach-bar .left i{
+        font-size: 20px;
+        color: var(--dark-color);
+    }
+
+    .cards-{
+        grid-template-columns: auto;
+        place-items: center;
+    }
+
+    .card-size{
+        width: 500px;
+        height: 430px;
+    }
+}
+
+@media (max-width:391px){
+
+    .nav-links- .nav-link- a{
+        font-size: 5.1px;
+    }
+
+    .nav-link-active- i{
+        font-size: 11px;
+        justify-content: center;
+        margin-right: 0;
+    }
+
+}
+
+
+
 
 
 
